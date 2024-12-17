@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Event Registration Form </title>
+</head>
+<body>
+
+    <form action="/submit_form" method="post">
+        <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required >
+
+        <label for="studentID">Student ID/Enrollment Number:</label>
+        <input type="text" id="studentID" name="studentID" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="contactNumber">Mobile Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <h2>Academic Information</h2>
+        <label for="course">Course/Program:</label>
+        <input type="text" id="course" name="course" required>
+
+        <label for="year">Year/Semester:</label>
+        <input type="text" id="year" name="year" required>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
+
+        <h2>Accommodation Details</h2>
+        <label for="residentialStatus">Residential Status:</label>
+        <select id="residentialStatus" name="residentialStatus" required>
+            <option value="hostler">Hostler</option>
+            <option value="dayScholar">Day Scholar</option>
+        </select>
+
+        <label for="hostelName">Hostel Name (if applicable):</label>
+        <input type="text" id="hostelName" name="hostelName">
+
+        <label for="roomNumber">Room Number (if applicable):</label>
+        <input type="text" id="roomNumber" name="roomNumber">
+
+        <label for="address">Address (for day scholars):</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+
+        <h2>Event Details</h2>
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="eventName" required>
+
+        <label for="participationType">Participation Type:</label>
+        <select id="participationType" name="participationType" required>
+            <option value="individual">Individual</option>
+            <option value="team">Team</option>
+        </select>
+
+        <label for="teamName">Team Name (if applicable):</label>
+        <input type="text" id="teamName" name="teamName">
+
+        <h2>Emergency Contact</h2>
+        <label for="emergencyContactName">Emergency Contact Name:</label>
+        <input type="text" id="emergencyContactName" name="emergencyContactName" required>
+
+        <label for="emergencyContactNumber">Emergency Contact Number:</label>
+        <input type="tel" id="emergencyContactNumber" name="emergencyContactNumber" required>
+
+        <label for="emergencyRelationship">Relationship:</label>
+        <input type="text" id="emergencyRelationship" name="emergencyRelationship" required>
+
+        <h2>Additional Details</h2>
+        <label for="specialRequirements">Special Requirements:</label>
+        <textarea id="specialRequirements" name="specialRequirements" rows="3"></textarea>
+
+        <label for="tshirtSize">T-shirt Size:</label>
+        <select id="tshirtSize" name="tshirtSize">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra Large</option>
+        </select>
+
+        <h2>Consent</h2>
+        <label>
+            <input type="checkbox" name="consent" required> I agree to the terms and conditions.
+        </label>
+
+        <h2>Attachments</h2>
+        <label for="idProof">Upload ID Proof:</label>
+        <input type="file" id="idProof" name="idProof" accept=".jpg, .jpeg, .png, .pdf">
+
+        <button type="submit">Register</button>
+    </fieldset></form>
+</body>
+</html>
